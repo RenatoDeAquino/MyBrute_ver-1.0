@@ -26,8 +26,6 @@ def esquiva(sts_agi):
         else:
             return False
 
-def damage(sts_str):
-    return (sts_str / 2) * 0.5
 
 def double_atack(sts_spd):
     chance = random.randint(1,10)
@@ -47,6 +45,7 @@ def double_atack(sts_spd):
             return True
         else:
             return False
+
 def conter_atack(sts_spd):
     chance = random.randint(1,10)
     
@@ -65,6 +64,8 @@ def conter_atack(sts_spd):
             return True
         else:
             return False
+
+    
 
 
 
