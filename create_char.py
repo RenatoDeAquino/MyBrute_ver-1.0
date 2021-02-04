@@ -35,6 +35,17 @@ def create_char():
     # print("VELOCIDADE -> " + str(sts_spd))
     # print("VITALIDADE -> " + str(sts_vit))
 
+    #passar função para outro programa
+    #adicionar buffs fornecidos pelas habilidades
+    if '+str' in skill_list:
+        sts_str += 10
+    elif '+agi' in skill_list:
+        sts_agi += 10
+    elif '+spd' in skill_list:
+        sts_spd += 10
+    elif '+vit' in skill_list:
+        sts_vit += 10
+
     arquivo = open("char.txt", "w")
     
     personagem = list()
