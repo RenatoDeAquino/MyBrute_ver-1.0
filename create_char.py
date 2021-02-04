@@ -12,10 +12,10 @@ def create_char():
     #pegando o nome do personagem
     user_input = input("\nDigite o nome do seu personagem\n->")
     #status base do personagem
-    sts_str = random.randint(min_sts,max_sts)
-    sts_agi = random.randint(min_sts,max_sts)
-    sts_spd = random.randint(min_sts,max_sts)
-    sts_vit = random.randint(min_sts,max_sts)
+    sts_str = random.randint(min_sts, max_sts)
+    sts_agi = random.randint(min_sts, max_sts)
+    sts_spd = random.randint(min_sts, max_sts)
+    sts_vit = random.randint(min_sts, max_sts)
     #chamamento para geração da possibilidade de se ter habilidade e qual é
     sort_skill = gera_skill()
     if sort_skill != None:
@@ -44,11 +44,12 @@ def create_char():
     personagem.append(str(sts_str) + "\n")
     personagem.append(str(sts_agi) + "\n")
     personagem.append(str(sts_spd) + "\n")
-    personagem.append(str(sts_vit) + "\n")
+    personagem.append(str(sts_vit))
 
     arquivo.writelines(personagem)
 
     arquivo.close()
+
 
 
 
